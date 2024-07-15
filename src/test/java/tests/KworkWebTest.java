@@ -21,14 +21,16 @@ public class KworkWebTest extends BaseTest {
                  .checkTagName();
     }
 
-
+    @DisplayName("Проверка поиска на главной странице")
     @Test
     public void testSearchFunctionality() {
         KworkSearch searchPage = new KworkSearch();
 
         // Открываем главную страницу, выполняем поиск и проверяем результаты
         searchPage.openHomePage()
-                  .searchFor("настройка чат бота");
+                  .searchFor("настройка чат бота")
+                  .checkSearchInputValue("настройка чат бота")
+                  .checkSearchResult();
     }
 
 }

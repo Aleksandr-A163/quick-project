@@ -1,12 +1,19 @@
 package pages;
 
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 
 public class KworkSearch {
-    SelenideElement searchInput = $(".header-search");
+
+    private final SelenideElement
+            searchInput = $(".header-search");
+    private final ElementsCollection
+            postElements = $$(".page-filters__content");
 
     @Step("Открыть главную страницу Kwork")
     public KworkSearch openHomePage() {
@@ -19,5 +26,16 @@ public class KworkSearch {
         searchInput.setValue(query);
         searchInput.pressEnter();
         return this;
+    }
+
+    @Step("Проверка введенного значения {query}")
+    public KworkSearch checkSearchInputValue(String query) {
+        searchInput.shouldHave(Condition.value(query));
+        return this;
+    }
+
+    @Step("Проверить, что поиск вернул хотя бы 1 результат")
+    public void checkSearchResult() {
+        postElements.shouldHave(sizeGreaterThan(0));
     }
 }

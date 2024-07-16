@@ -60,19 +60,19 @@ gradle clean test kwork -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrows
 После выполнения сборки, в блоке <code>Build history</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
 <p align="center">
-<img title="Jenkins Build" src="media/screen/build.PNG">
+<img title="Jenkins Build" src="media/screen/build.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Пример Allure-отчета
 
 <p align="center">
-<img title="Allure" src="media/screen/allure.PNG">
+<img title="Allure" src="media/screen/allure.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Графики и диаграммы
 
 <p align="center">
-<img title="graphs" src="media/screen/graphs.PNG">
+<img title="graphs" src="media/screen/graphs.png">
 </p>
 
 ### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram
@@ -80,7 +80,7 @@ gradle clean test kwork -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrows
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screen/telegram.PNG">
+<img width="70%" title="Telegram Notifications" src="media/screen/telegram.png">
 </p>
 
 ### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid

@@ -22,7 +22,7 @@ public class KworkWebTest extends BaseTest {
 
     @DisplayName("Проверка наличия ссылки на Apple и проверка заголовка")
     @Test
-    public void AppleLinkFunctionalityTest() {
+    public void appleLinkFunctionalityTest() {
         KworkLinksPage linksApplePage = new KworkLinksPage();
 
         linksApplePage.openHomePage()
@@ -33,7 +33,7 @@ public class KworkWebTest extends BaseTest {
 
     @DisplayName("Проверка наименований заголовков и тегов")
     @Test
-    public void WebsiteRepairPageTest() {
+    public void websiteRepairPageTest() {
         KworkWebsiteRepairPage kworkPage = new KworkWebsiteRepairPage();
 
         kworkPage.openPage()
@@ -43,7 +43,7 @@ public class KworkWebTest extends BaseTest {
 
     @DisplayName("Проверка поиска на главной странице кириллией")
     @Test
-    public void SearchKirilFunctionalityTest() {
+    public void searchKirilFunctionalityTest() {
         KworkSearchPage searchPage = new KworkSearchPage();
 
         searchPage.openHomePage()
@@ -54,7 +54,7 @@ public class KworkWebTest extends BaseTest {
 
     @DisplayName("Проверка поиска на главной странице латиницей")
     @Test
-    public void SearchEngFunctionalityTest() {
+    public void searchEngFunctionalityTest() {
         KworkSearchPage searchPage = new KworkSearchPage();
 
         searchPage.openHomePage()
@@ -65,7 +65,7 @@ public class KworkWebTest extends BaseTest {
 
     @DisplayName("Проверка поиска на главной странице по числу")
     @Test
-    public void SearchNumberFunctionalityTest() {
+    public void searchNumberFunctionalityTest() {
         KworkSearchPage searchPage = new KworkSearchPage();
 
         // Проверяем работу поиска

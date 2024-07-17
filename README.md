@@ -1,4 +1,6 @@
-# Автоматические тесты для [Kwork](https://kwork.ru)
+# Автоматические тесты для фриланс биржи [Kwork](https://kwork.ru) 
+<img width="30%" title="IntelliJ IDEA" src="media/logo/kwork-logo.svg">
+
 ## :scroll: Содержание:
 
 - [Используемый стек](#computer-используемый-стек)
@@ -7,6 +9,7 @@
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
 - [Графики и диаграммы](#-графики-и-диаграммы)
+- [Тесты кейсы в Allure TestOps](#-тесты-кейсы-в-allure-testops)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-тестов-в-selenoid)
 
@@ -18,6 +21,7 @@
 <img width="6%" title="Selenide" src="media/logo/Selenide.svg">
 <img width="6%" title="Selenoid" src="media/logo/Selenoid.svg">
 <img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg">
+<img width="6%" title="Allure Report" src="media/logo/AllureTestOps.svg">
 <img width="6%" title="Gradle" src="media/logo/Gradle.svg">
 <img width="6%" title="JUnit5" src="media/logo/JUnit5.svg">
 <img width="6%" title="GitHub" src="media/logo/GitHub.svg">
@@ -30,12 +34,12 @@
 Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
 
 ## :pushpin: Описание тестов:
-- ✓ *testVkLinkFunctionality() - Тест для проверки ссылки на VK*
-- ✓ *testAppleLinkFunctionality() - Тест для проверки ссылки на магазин Apple* 
-- ✓ *testWebsiteRepairPage() - Тест для проверки наименований заголовков и тегов*
-- ✓ *testSearchKirilFunctionality() - Тест для проверки поиска по кириллице*
-- ✓ *testSearchEngFunctionality() - Тест для проверки поиска по латинице*
-- ✓ *testSearchNumberFunctionality() - Тест для проверки поиска на главной странице по числу*
+- ✓ *vkLinkFunctionalityTest() - Тест для проверки ссылки на VK*
+- ✓ *appleLinkFunctionalityTest() - Тест для проверки ссылки на магазин Apple* 
+- ✓ *websiteRepairPageTest() - Тест для проверки наименований заголовков и тегов*
+- ✓ *searchKirilFunctionalityTest() - Тест для проверки поиска по кириллице*
+- ✓ *searchEngFunctionalityTest() - Тест для проверки поиска по латинице*
+- ✓ *searchNumberFunctionalityTest() - Тест для проверки поиска на главной странице по числу*
  
 Содержание Allure-отчета:
 * Шаги теста;
@@ -73,6 +77,13 @@ gradle clean test kwork -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrows
 
 <p align="center">
 <img title="graphs" src="media/screen/graphs.png">
+</p>
+
+
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Тесты кейсы в Allure TestOps
+
+<p align="center">
+<img title="graphs" src="media/screen/allure-test-ops.png">
 </p>
 
 ### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram
